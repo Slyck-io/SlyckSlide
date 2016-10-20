@@ -1,7 +1,7 @@
 var slyckSlider = (function() {
 	this.images = [];
-	var nextBtn = document.querySelector('.gallery .buttons .next');
-	var prevBtn = document.querySelector('.gallery .buttons .prev');
+	var nextBtn = document.querySelector('.slyckSlide .buttons .next');
+	var prevBtn = document.querySelector('.slyckSlide .buttons .prev');
 	var slide;
 	var page = 0;
 	var autoLoopTimeout;
@@ -39,7 +39,7 @@ var slyckSlider = (function() {
 		document.querySelectorAll('.photos .block')[0].classList.add("active");
 
 		//To keep size proportionate
-		var firstImage = document.querySelector('.gallery .photos .block img');
+		var firstImage = document.querySelector('.slyckSlide .photos .block img');
 		firstImage.onload = function() {
 			photos.style.height = firstImage.height + "px";
 		}
@@ -48,7 +48,7 @@ var slyckSlider = (function() {
 		}
 
 		//Var set
-		slide = document.querySelectorAll('.gallery .photos .block');
+		slide = document.querySelectorAll('.slyckSlide .photos .block');
 
 		//Pagination
 		var paginator = document.getElementById('pagination');
@@ -137,13 +137,3 @@ var slyckSlider = (function() {
 		}
 	}
 })();
-
-var images = [
-	"http://www.theangelettigroup.com/sites/default/files/Closer%20to%20Free%20Banner.jpg",
-	"http://www.theangelettigroup.com/sites/default/files/USN%26WR2016_0.jpg",
-	"http://www.theangelettigroup.com/sites/default/files/AHP%20Chicago.jpg",
-	"http://www.theangelettigroup.com/sites/default/files/Best%20Hospitals%20in%20NJ%20Banner.jpg",
-	"http://www.theangelettigroup.com/sites/default/files/Congrats%20Drew%20Banner.jpg"
-]
-
-slyckSlider.init(images);
