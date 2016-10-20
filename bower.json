@@ -1,4 +1,15 @@
 {
     "name": "SlyckSlide",
-    "version": "0.0.1"
+    "version": "0.0.1",
+    "main": "dist/slyckSlide.min.js",
+    "ignore": [
+        "src",
+        ".bowerrc",
+        ".gitignore",
+        "bower.json",
+        "gruntfile.js",
+        "package.json",
+        "README.md",
+        "LICENSE"
+    ]
 }
