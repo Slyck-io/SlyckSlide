@@ -1,15 +1,22 @@
 {
-    "name": "SlyckSlide",
-    "version": "0.0.1",
-    "main": "dist/slyckSlide.min.js",
-    "ignore": [
-        "src",
-        ".bowerrc",
-        ".gitignore",
-        "bower.json",
-        "gruntfile.js",
-        "package.json",
-        "README.md",
-        "LICENSE"
-    ]
+  "name": "SlyckSlide",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Slyck-io/SlyckSlide",
+  "authors": [
+    "Steve Calabro <steve@slyck.io>"
+  ],
+  "description": "A lightweight/simple plain Vanilla JS slider",
+  "main": "dist/slyckSlide.min.js",
+  "moduleType": [
+  ],
+  "keywords": [
+    "slyck",
+    "js",
+    "slider",
+    "lightweight",
+    "slyck.io",
+    "image",
+    "slide"
+  ],
+  "license": "MIT"
 }
