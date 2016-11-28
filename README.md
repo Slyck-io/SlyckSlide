@@ -15,8 +15,6 @@ Please note. Font Awesome must be included in the project.
 ```html
 <html>
 
-
-
 <head>
     <title>Responsive vanilla javascript slider</title>
     <link rel="stylesheet" href="../dist/slyckSlide.css">
