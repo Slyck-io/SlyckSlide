@@ -63,6 +63,23 @@ module.exports = function(grunt) {
                 dest: 'dist/',
             },
         },
+        bump: {
+            options: {
+                files: ['package.json'],
+                updateConfigs: [],
+                commit: false,
+                createTag: true,
+                tagName: 'v%VERSION%',
+                tagMessage: 'Version %VERSION%',
+                push: true,
+                pushTo: 'origin',
+                gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
+                globalReplace: false,
+                prereleaseName: "pre",
+                metadata: '',
+                regExp: false
+            }
+        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-less');

@@ -1,6 +1,6 @@
 {
   "name": "slyck-slide",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A lightweight/simple plain Vanilla JS slider",
   "main": "dist/slyckSlide.min.js",
   "directories": {
