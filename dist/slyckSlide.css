@@ -11,9 +11,10 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  top: calc(52%);
+  top: calc(50% - 1em);
   font-size: 2em;
   font-weight: bold;
+  z-index: 100;
 }
 .slyckSlide .buttons a {
   text-decoration: none;
@@ -71,6 +72,7 @@
   width: 6px;
   display: inline-block;
   border: 1px solid gray;
+  cursor: pointer;
 }
 .slyckSlide .pagination-items li.active {
   background: gray;

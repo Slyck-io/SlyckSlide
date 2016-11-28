@@ -41,8 +41,8 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['**/*.js'],
-                tasks: ['less:development'],
+                files: ['src/js/**/*.js', 'src/less/**/*.less', 'examples/**/*.html'],
+                tasks: ['less:development', 'autoprefixer', 'copy'],
                 options: {
                     spawn: false,
                 },
@@ -90,6 +90,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    //grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+    grunt.registerTask('default', ['less:development', 'autoprefixer', 'copy', 'watch']);
     grunt.registerTask('build', ['uglify', 'less:production', 'autoprefixer', 'cssmin', 'copy']);
 }
