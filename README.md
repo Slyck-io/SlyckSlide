@@ -6,7 +6,7 @@ A lightweight/simple plain Vanilla JS slider
 
 `bower install --save slyck-slide; bower install --save fontawesome`
 
-## Usage
+## Setup
 
 Please note. Font Awesome must be included in the project. 
 
@@ -29,11 +29,12 @@ Please note. Font Awesome must be included in the project.
 </html>
 ```
 
-#### Basic
+#### Javascript
 
 You may add this as an additional script tag after `slyckSlide.min.js` or in a seperate js file
 ```html
 <script type="text/javascript">
+//List of image srcs
 var images = [
     "http://placehold.it/1920x490?text=1",
     "http://placehold.it/1920x490?text=2",
@@ -43,8 +44,8 @@ var images = [
 
 document.addEventListener('DOMContentLoaded', function() {
     slyckSlider.init(images, {
-        slideTime: 5000,
-        waitTime: 10000
+        slideTime: 5000, //Amount of time between auto image transitions
+        waitTime: 10000 //How long to wait after a manual click to start autoLoop
     });
 }, false);
 </script>
