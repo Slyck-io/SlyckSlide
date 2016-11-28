@@ -12,7 +12,7 @@ Please note. Font Awesome must be included in the project.
 
 * The only required div is the `slyckSlide` div. Please be sure to include it
 #### Html
-```
+```html
 <html>
 
 
@@ -34,7 +34,7 @@ Please note. Font Awesome must be included in the project.
 #### Basic
 
 You may add this as an additional script tag after `slyckSlide.min.js` or in a seperate js file
-```
+```html
 <script type="text/javascript">
 var images = [
     "http://placehold.it/1920x490?text=1",
