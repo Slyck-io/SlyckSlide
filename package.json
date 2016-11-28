@@ -1,0 +1,39 @@
+{
+  "name": "slyck-slide",
+  "version": "0.0.1",
+  "description": "A lightweight/simple plain Vanilla JS slider",
+  "main": "dist/slyckSlide.min.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slyck-io/SlyckSlide.git"
+  },
+  "keywords": [
+    "slyck",
+    "image",
+    "slider",
+    "lightweight",
+    "slide"
+  ],
+  "author": "steve@slyck.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Slyck-io/SlyckSlide/issues"
+  },
+  "homepage": "https://github.com/Slyck-io/SlyckSlide#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-bump": "^0.8.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
