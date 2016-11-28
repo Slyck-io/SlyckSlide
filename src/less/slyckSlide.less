@@ -1,75 +1,77 @@
 .slyckSlide {
-	width: 100%;
-	margin: 10px auto;
-	text-align: center;
-	position: relative;
-	.buttons {
-		position: absolute;
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-		top: calc(50% + 2em);
-		font-size: 2em;
-		font-weight: bold;
-		a {
-			text-decoration: none;
-			color: darken(white, 25%);
-			position: absolute;
-			&:hover {
-				color: darken(white, 55%);
-			}
-			&.prev {
-				left: 15px;
-			}
-			&.next {
-				right: 15px;
-			}
-		}
-	}
-	.photos {
-		position: relative;
-		.block {
-			height: 100%;
-			width: 100%;
-			position: absolute;
-			left: 0;
-			opacity: 0;
-			transition: opacity 1s;
-			z-index: 0;
-			&.active {
-				opacity: 1;
-				z-index: 20;
-			}
-			img {
-				width: 100%;
-			}
-		}
-		.block-1 {
-			background: lightcoral;
-		}
-		.block-2 {
-			background: teal;
-		}
-		.block-3 {
-			background: orchid;
-		}
-	}
-	#pagination ul {
-		list-style-type: none;
-		-webkit-padding-start: 0;
-		-webkit-margin-after: 0;
-		-webkit-margin-before: 0;
-	}
-	.pagination-items li {
-		padding: 0;
-		margin-right: 4px;
-		border-radius: 50%;
-		height: 6px;
-		width: 6px;
-		display: inline-block;
-		border: 1px solid gray;
-	}
-	.pagination-items li.active {
-		background: gray;
-	}
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    .buttons {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        top: ~"calc(50% - 1em)";
+        font-size: 2em;
+        font-weight: bold;
+        z-index: 100;
+        a {
+            text-decoration: none;
+            color: darken(white, 25%);
+            position: absolute;
+            &:hover {
+                color: darken(white, 55%);
+            }
+            &.prev {
+                left: 15px;
+            }
+            &.next {
+                right: 15px;
+            }
+        }
+    }
+    .photos {
+        position: relative;
+        .block {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s;
+            z-index: 0;
+            &.active {
+                opacity: 1;
+                z-index: 20;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .block-1 {
+            background: lightcoral;
+        }
+        .block-2 {
+            background: teal;
+        }
+        .block-3 {
+            background: orchid;
+        }
+    }
+    #pagination ul {
+        list-style-type: none;
+        -webkit-padding-start: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-before: 0;
+    }
+    .pagination-items li {
+        padding: 0;
+        margin-right: 4px;
+        border-radius: 50%;
+        height: 6px;
+        width: 6px;
+        display: inline-block;
+        border: 1px solid gray;
+        cursor: pointer;
+    }
+    .pagination-items li.active {
+        background: gray;
+    }
 }
