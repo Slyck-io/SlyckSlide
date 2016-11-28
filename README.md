@@ -12,18 +12,18 @@ Please note. Font Awesome must be included in the project.
 
 * The only required div is the `slyckSlide` div. Please be sure to include it
 #### Html
+
 ```html
 <html>
 
 <head>
-    <title>Responsive vanilla javascript slider</title>
-    <link rel="stylesheet" href="../dist/slyckSlide.css">
+    <link rel="stylesheet" href="/path/to/slyckSlide.min.css">
 </head>
 
 <body>
     <div class="slyckSlide"></div>
-    <script src="https://use.fontawesome.com/e57459b8e8.js"></script>
-    <script type="text/javascript" src="../dist/slyckSlide.js"></script>
+    <script src="path/to/font/awesome"></script>
+    <script type="text/javascript" src="/path/to/slyckSlide.min.js"></script>
 </body>
 
 </html>
