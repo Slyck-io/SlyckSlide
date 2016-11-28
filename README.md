@@ -11,11 +11,12 @@ A lightweight/simple plain Vanilla JS slider
 Please note. Font Awesome must be included in the project. 
 
 * The only required div is the `slyckSlide` div. Please be sure to include it
+#### Html
 ```
 <html>
 
 
-### Html
+
 <head>
     <title>Responsive vanilla javascript slider</title>
     <link rel="stylesheet" href="../dist/slyckSlide.css">
